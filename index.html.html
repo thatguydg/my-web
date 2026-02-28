@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DG's WEB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        img {
+            border-radius: 5px;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figcaption {
+            font-size: 14px;
+            color: grey;
+        }
+
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .photos figure {
+            width: 23%;
+        }
+
+        .slider {
+            position: relative;
+            width: 500px;
+            height: 350px;
+            margin: 40px auto;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .slider figure {
+            margin: 0;
+            display: none;
+        }
+
+        .slider figure.active {
+            display: block;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .slider figcaption {
+            margin-top: 5px;
+            font-size: 14px;
+            color: grey;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: black;
+            background: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            user-select: none;
+            border-radius: 5px;
+        }
+
+        .arrow.left {
+            left: 10px;
+        }
+
+        .arrow.right {
+            right: 10px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background-color:blue; color:white; padding:10px;">This is a digital diary about Nepal in short.</h1>
+    <h2 style="color: orange;">In this web you can know about me and my home country Nepal</h2>
+
+    <p>I am Dipesh Ghimire aka Christmas child because I was born on Christmas day.</p>
+
+    <img src="IMG_9982.jpg" alt="Dipesh Ghimire" style="width:200px; height:200px; margin: 20px 0;">
+    <p>
+        This photo was taken around a year ago in a marriage reception. I used to be a traveller when I was back home; 
+        I love to ride motorbikes and go to the hills and enjoy the vibes there. I am a flutist and guitarist. 
+        I love to play guitar in a place full of ambients, and about flute, I love to play flute in the hills above the clouds. 
+        Watching down from the hills feels like I am watching down from the window of an airplane, but in real I was standing in the hill above the clouds. 
+        I am adding my flute music video which I recorded in the hill, which is around 1,945 meters above sea level. 
+        <p>Here is a random <strong>Nepal's</strong> aesthetic reel for you:</p>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DUxKXWaEklU/?utm_source=ig_web_copy_link" data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;">
+</blockquote>
+<script async src="https://www.instagram.com/embed.js"></script>
+    </p>
+
+    <p>Now, I am going to describe my home country Nepal. Nepal is a landlocked country located in South Asia, between India and China. 
+        It is known for its natural beauty, mountains, cultural diversity, and rich traditions. Nepal is home to Mount Everest, the highest mountain in the world. 
+        The capital city is Kathmandu, and the country has many ethnic groups, languages, and religions living together peacefully.
+    </p>
+
+    <figure>
+        <img src="Nepal-Map.jpg" alt="Nepal Map" style="width:200px; height:200px;">
+        <figcaption>Nepal's map</figcaption>
+    </figure>
+
+    <p>Flag of Nepal: Nepal’s flag is unique because it is the only non-rectangular national flag in the world. 
+        It has two triangular shapes stacked one above the other. The flag is crimson red with a blue border. 
+        The upper triangle contains a moon, and the lower triangle contains a sun, symbolizing peace, hope, and the long-lasting existence of Nepal.
+    </p>
+
+    <figure>
+        <img src="flag-of-nepal.jpg" alt="Nepal Flag" style="width:200px; height:200px;">
+        <figcaption>Nepal’s flag stands tall with the bravery and unity of the Gurkhas.</figcaption>
+    </figure>
+
+    <p>Prithvi Narayan Shah was the founder of modern Nepal. He was the King of Gorkha who unified many small kingdoms into one nation in the 18th century. 
+        Through his leadership, bravery, and strategic planning, he successfully conquered the Kathmandu Valley and other regions, 
+        laying the foundation of present-day Nepal. He is remembered as a visionary ruler who promoted national unity and independence.
+    </p>
+
+    <figure>
+        <img src="king of nepal.jpg" alt="Prithvi Narayan Shah" style="width:200px; height:200px;">
+        <figcaption>The first king of Great Nepal</figcaption>
+    </figure>
+
+    <p>There are three regions of Nepal:</p>
+    <p><strong>1. Mountain Region (Himalayan Region):</strong> Located in the north, this region includes the Himalayas and Mount Everest. It has cold weather, high altitude, and sparse population.</p>
+
+    <div class="photos">
+        <figure>
+            <img src="mt everest.jpg" alt="Mt. Everest">
+            <figcaption>The peak of the world, Mt. Everest</figcaption>
+        </figure>
+        <figure>
+            <img src="mt kanchanjunga.jpg" alt="Mt. Kanchanjunga">
+            <figcaption>Mt. Kanchanjunga – 3rd tallest mountain in the world</figcaption>
+        </figure>
+        <figure>
+            <img src="panch pokhari.jpg" alt="Panch Pokhari">
+            <figcaption>Panch Pokhari – popular trekking place</figcaption>
+        </figure>
+        <figure>
+            <img src="tilicho lake.jpg" alt="Tilicho Lake">
+            <figcaption>Tilicho Lake – one of the highest lakes in the world</figcaption>
+        </figure>
+    </div>
+
+    <p><strong>2. Hill Region:</strong> Situated between the mountains and plains, this region has valleys, hills, and moderate climate. Major cities like Kathmandu and Pokhara lie here.</p>
+
+    <div class="slider">
+        <span class="arrow left" onclick="prev()">&#10094;</span>
+        <span class="arrow right" onclick="next()">&#10095;</span>
+
+        <figure class="slide active">
+            <img src="lamjung hill.jpg" alt="Lamjung Hill">
+            <figcaption>Lamjung Hill – Hills of Nepal</figcaption>
+        </figure>
+        <figure class="slide">
+            <img src="hill.jpg" alt="Hill">
+            <figcaption>Beautiful Hill – Hills of Nepal</figcaption>
+        </figure>
+        <figure class="slide">
+            <img src="random pic of hill.jpg" alt="Random Hill">
+            <figcaption>Random Hill – Hills of Nepal</figcaption>
+        </figure>
+        <figure class="slide">
+            <img src="boudha.jpg" alt="Bouddha Stupa">
+            <figcaption>Bouddha Stupa – lies in the capital city of Nepal</figcaption>
+        </figure>
+        <figure class="slide">
+            <img src="nepal-parliament-building.jpg" alt="Kathmandu">
+            <figcaption>Capital city of Nepal</figcaption>
+        </figure>
+        <figure class="slide">
+            <img src="pokhara.jpg" alt="Pokhara">
+            <figcaption>Lake side Pokhara</figcaption>
+        </figure>
+        <figure class="slide">
+            <img src="giang-ta-chai-village-1.jpg" alt="Giang Ta Chai Village">
+            <figcaption>Giang Ta Chai Village – Hills of Nepal</figcaption>
+        </figure>
+    </div>
+    <p><strong> 3. Terai Region:</strong> The southern lowland plains with fertile soil and warm climate. It is the main agricultural and densely populated area of Nepal.
+    </p> 
+    <div class="photos-row">
+  <div class="photo">
+    <img src="bishazari.jpg" alt="Image 1">
+    <figcaption>Batuli pokhari with friends</figcaption>
+  </div>
+  <div class="photo">
+    <img src= "landscape.jpg" alt="Image 2">
+    <figcaption> My random photo</figcaption>
+  </div>
+  <div class="photo">
+    <img src= "before ride.jpg" alt="Image 3">
+    <figcaption> view starts when you stop and see</figcaption>
+  </div>
+  <div class="photo">
+    <img src="swimming in natural lake.jpg" alt="Image 4">
+    <figcaption> Natural swimming pool</figcaption>
+  </div>
+  <p><strong> 4. Now, </strong>I am going to show you my random photos from my gallery here </p>
+       <div class="Random-photos">
+  <div class="photo">
+    <img src= "flute.jpg" alt="Image 1">
+    <figcaption> fluting in water-fall</figcaption>
+  </div>
+  <div class="photo">
+    <img src= "from the hill.jpg" alt="Image 2">
+    <figcaption> From the hill</figcaption>
+  </div>
+  <div class="photo">
+    <img src= "cycle.jpg" alt="Image 3">
+    <figcaption> cycling </figcaption>
+  </div>
+
+   <div class="photo">
+    <img src="peacock.jpg" alt="Image 4">
+    <figcaption> Sitting infront of the peacock</figcaption>
+  </div>
+
+     <div class="photo">
+    <img src="pasuphati temple.jpg" alt="Image 5">
+    <figcaption> My favorite place pasuphati temple-kathmandu</figcaption>
+  </div>
+
+       <div class="photo">
+    <img src="in the hills.jpg" alt="Image 6">
+    <figcaption> in the hills</figcaption>
+  </div>
+
+         <div class="photo">
+    <img src="abandoned place.jpg" alt="Image 7">
+    <figcaption> abandoned place</figcaption>
+  </div>
+
+        <div class="photo">
+    <img src="friends.jpg" alt="Image 8">
+    <figcaption> friends </figcaption>
+  </div>
+<p style= "background-color:yellow; color:blue; padding:5px;"><strong>Here is my flute video recorded in the hills:</strong></p>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DEl2CDYpEwy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;">
+</blockquote>
+<script async src="https://www.instagram.com/embed.js"></script>
+
+<p style= "background-color:yellow; color: blue; padding:5px;"><strong>Here is my Mini-vlog video recorded in my home city:</strong></p>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C8kKWe_yw-F/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;">
+</blockquote>
+<script async src="https://www.instagram.com/embed.js"></script>
+
+<p style="background-color: yellow; color: red; font-weight: bold;">
+    Thank You for visiting my site!!
+   <br> Enjoy your day!!
+    <br>Best Regards,<br>
+    <strong>Dipesh Ghimire</strong> <br>
+    <span style= "text-decoration:underline";><strong>contact:</strong>+358449502976,
+    ghimiredipesh2060@icloud.com
+</p>
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll('.slider .slide');
+
+        function showSlide(i) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[i].classList.add('active');
+        }
+
+        function next() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+
+        function prev() {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        }
+    </script>
+</body>
+</html>
